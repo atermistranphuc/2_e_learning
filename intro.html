@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu - EDTECH HUB</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body class="bg-gray-100">
+    <!-- Banner -->
+    <div class="relative w-full h-32" style="background: #002669;">
+        <div class="absolute inset-0 flex items-center justify-center">
+            <img src="../images/LOGOFINAL.jpg" alt="Logo" class="h-20">
+        </div>
+    </div>
+
+    <!-- Thanh điều hướng -->
+    <nav class="bg-opacity-70">
+        <div class="container mx-auto flex items-center justify-between p-4">
+            <div class="text-xl font-bold text-blue-600">
+                <img src="../images/LOGOFINAL.jpg" alt="Logo" class="h-8">
+            </div>
+            <ul class="flex space-x-6 text-gray-700 font-semibold">
+                <li><a href="../index.html" class="hover:text-blue-500">Trang chủ</a></li>
+                <li><a href="./courses.html" class="hover:text-blue-500">Khóa học</a></li>
+                <li><a href="./intro.html" class="hover:text-blue-500">Giới thiệu</a></li>
+                <li><a href="./contact.html" class="hover:text-blue-500">Liên hệ</a></li>
+                <li id="loginBtn"><a href="./login.html" class="hover:text-blue-500">Đăng nhập</a></li>
+                <li id="userInfo" class="hidden">
+                    <a href="./my_page.html" class="text-blue-600 hover:text-blue-800" id="username"></a>
+                    <button onclick="logout()" class="ml-2 text-red-600 hover:text-red-800">Đăng xuất</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</nav>
+
+    <!-- Nội dung chính -->
+    <div class="container mx-auto px-4 py-8">
+        <!-- Phần giới thiệu -->
+        <div class="bg-white rounded-lg shadow-md p-8 mb-8 animate__animated animate__fadeIn">
+            <h1 class="text-4xl font-bold text-gray-800 mb-6">Về EDTECH HUB</h1>
+            <div class="prose max-w-none">
+                <p class="text-gray-600 mb-6">
+                    EDTECH HUB là nền tảng học trực tuyến hàng đầu, cung cấp các khóa học chất lượng cao 
+                    cho mọi đối tượng học viên. Chúng tôi cam kết mang đến trải nghiệm học tập tốt nhất 
+                    với đội ngũ giảng viên chuyên nghiệp và nội dung bài giảng được thiết kế kỹ lưỡng.
+                </p>
+                <p class="text-gray-600 mb-6">
+                    Với sứ mệnh "Mang tri thức đến mọi người", EDTECH HUB luôn nỗ lực phát triển và 
+                    cập nhật nội dung học tập để đáp ứng nhu cầu ngày càng cao của người học trong thời đại số.
+                </p>
+            </div>
+        </div>
+
+        <!-- Phần giá trị cốt lõi -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+            <div class="bg-white rounded-lg shadow-md p-6 text-center animate__animated animate__fadeIn">
+                <div class="text-4xl text-blue-600 mb-4">🎯</div>
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Chất lượng</h3>
+                <p class="text-gray-600">Cam kết mang đến nội dung học tập chất lượng cao, được kiểm duyệt kỹ lưỡng.</p>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-6 text-center animate__animated animate__fadeIn">
+                <div class="text-4xl text-blue-600 mb-4">💡</div>
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Sáng tạo</h3>
+                <p class="text-gray-600">Phương pháp giảng dạy sáng tạo, phù hợp với từng đối tượng học viên.</p>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-6 text-center animate__animated animate__fadeIn">
+                <div class="text-4xl text-blue-600 mb-4">🤝</div>
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Hỗ trợ</h3>
+                <p class="text-gray-600">Đội ngũ hỗ trợ 24/7, sẵn sàng giải đáp mọi thắc mắc của học viên.</p>
+            </div>
+        </div>
+
+        <!-- Phần đội ngũ -->
+        <div class="bg-white rounded-lg shadow-md p-8 animate__animated animate__fadeIn">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">Đội ngũ của chúng tôi</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="text-center">
+                    <img src="../images/team1.jpg" alt="Team member" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-semibold text-gray-800">Nguyễn Văn A</h3>
+                    <p class="text-gray-600">Giám đốc điều hành</p>
+                </div>
+                <div class="text-center">
+                    <img src="../images/team2.jpg" alt="Team member" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-semibold text-gray-800">Trần Thị B</h3>
+                    <p class="text-gray-600">Trưởng phòng nội dung</p>
+                </div>
+                <div class="text-center">
+                    <img src="../images/team3.jpg" alt="Team member" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-semibold text-gray-800">Lê Văn C</h3>
+                    <p class="text-gray-600">Trưởng phòng kỹ thuật</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Kiểm tra trạng thái đăng nhập
+        function checkLoginStatus() {
+            fetch('../actions/check_login.php')
+                .then(response => response.json())
+                .then(data => {
+                    if (data.status === 'success') {
+                        document.getElementById('loginBtn').classList.add('hidden');
+                        document.getElementById('userInfo').classList.remove('hidden');
+                        document.getElementById('username').textContent = "Xin chào, " + data.user.name;
+                    } else {
+                        document.getElementById('loginBtn').classList.remove('hidden');
+                        document.getElementById('userInfo').classList.add('hidden');
+                    }
+                })
+                .catch(error => console.error('Error:', error));
+        }
+
+        // Hàm đăng xuất
+        function logout() {
+            fetch('../actions/logout.php')
+                .then(response => response.json())
+                .then(data => {
+                    if (data.status === 'success') {
+                        window.location.reload();
+                    }
+                })
+                .catch(error => console.error('Error:', error));
+        }
+
+        // Khởi tạo trang
+        document.addEventListener('DOMContentLoaded', checkLoginStatus);
+    </script>
+</body>
+</html>
